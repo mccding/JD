@@ -1,0 +1,99 @@
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	-webkit-tap-highlight-color: transparent;  /*去除点击高亮*/
+	-webkit-box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    color: #000;
+    height: 100%;
+}
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+input,textarea{
+	border: none;
+	outline: none;
+	resize: none;
+	-webkit-appearance: none;
+}
+img{
+	display: block;
+}
+/*清楚浮动*/
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+
+
+[class ^= "icon_"]
+{
+	background: url("../images/sprites.png") no-repeat;
+	background-size: 200px 200px;
+}
+
+/*头部搜索框区域*/
+.topBar{
+	height: 45px;
+	width: 100%;
+	background: url("../images/header-bg.png") repeat-x;
+	background-size: 1px 45px;
+	position:absolute;
+	z-index: 1000;
+}
+.topBar .icon_topBar_back{
+	display: block;
+	width: 45px;
+	height: 45px;
+	padding: 12px;
+	background-clip: content-box;
+	background-origin: content-box;
+	background-position: -20px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1001;
+}
+.topBar h3{
+	text-align: center;
+	line-height: 45px;
+	font-weight: 300;
+}
+.topBar form{
+	width: 100%;
+	position: absolute;
+	padding: 0 50px;
+	top: 5px;
+}
+.topBar form input{
+	width: 100%;
+	height: 35px;
+	border: 1px solid #E0E0E0;
+	border-radius: 5px;
+}
+.topBar .icon_menu{
+	display: block;
+	width: 45px;
+	height: 45px;
+	padding: 12px;
+	background-clip: content-box;
+	background-origin: content-box;
+	background-position: -60px 0px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}

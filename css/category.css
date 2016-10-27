@@ -1,0 +1,79 @@
+body{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+}
+
+/*页面内容区域*/
+.fl_conentBox{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-top: 45px;
+}
+/*左侧选项卡*/
+.tab_control{
+	position: absolute;
+	width: 90px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 45px;
+	overflow: hidden;
+	z-index: 999;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+.tab_control li a{
+	display: block;
+	height: 50px;
+	width: 100%;
+	background-color: #F3F4F6;
+	border-right: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	text-align: center;
+	line-height: 50px;
+}
+.tab_control li.now a{
+	border-right: none;
+	color:#E34E4E;
+	background-color: #fff;
+}
+/*右侧内容区域*/
+.fl_content{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-left: 90px;
+	padding-top: 45px;
+	
+}
+.fl_conentBox .fl_productBox{
+	padding: 9px;
+}
+.fl_conentBox .fl_productBox .fl_banner img{
+	width: 100%;
+}
+.fl_conentBox .fl_productBox .fl_product h3{
+	color: #888;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.fl_conentBox .fl_productBox .fl_product ul li{
+	width: 33.333%;
+	float: left;
+	margin-top: 13px;
+}
+.fl_conentBox .fl_productBox .fl_product ul li img{
+	width: 100%;
+}
+.fl_conentBox .fl_productBox .fl_product ul li p{
+	margin-top: 3px;
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
+}
